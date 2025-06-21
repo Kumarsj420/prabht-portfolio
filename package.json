@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.10",
+    "tailwindcss": "^4.1.10"
+  },
+    "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "build:dev": "webpack --config webpack.config.js --mode development",
+    "build:prod": "webpack --config webpack.config.js --mode production",
+    "build-watch": "webpack --config webpack.config.js --watch",
+    "css-build": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/style.css --watch",
+    "css-minify": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/style.css --minify"
+  }
+}

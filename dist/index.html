@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lawyer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <header class="bg-white shadow-lg shadow-gray-300/50 relative z-50">
+        <nav>
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="flex h-21 items-center justify-between">
+                    <div class="flex items-center w-full justify-center sm:justify-between">
+                        <div class="shrink-0">
+                            <a href="##" class="text-[#8B1F25] font-semibold text-xl">Logo</a>
+                        </div>
+                        <div class="hidden sm:ml-6 sm:block flex-1">
+                            <div class="flex space-x-8 justify-center">
+                                <a href="#"
+                                    class="rounded-md py-2 text-lg font-light text-[#222222] hover:text-[#8B1F25] transition relative after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#8B1F25] after:transition-all after:duration-300 hover:after:w-full hover:after:left-0">
+                                    About
+                                </a>
+                                <a href="#"
+                                    class="rounded-md py-2 text-lg font-light text-[#222222] hover:text-[#8B1F25] transition relative after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#8B1F25] after:transition-all after:duration-300 hover:after:w-full hover:after:left-0">
+                                    Expertise
+                                </a>
+                                <a href="#"
+                                    class="rounded-md py-2 text-lg font-light text-[#222222] hover:text-[#8B1F25] transition relative after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#8B1F25] after:transition-all after:duration-300 hover:after:w-full hover:after:left-0">
+                                    Clients' Review
+                                </a>
+                            </div>
+                        </div>
+                        <a href="##"
+                            class="sm:inline-flex items-center gap-x-2 rounded-full bg-[#8B1F25] px-5 py-3 text-base font-normal text-white shadow-sm hover:bg-[#B73239] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8B1F25] cursor-pointer hover:scale-105 transition-all duration-200 hidden">
+                            Free Consultant
+                            <svg xmlns="http://www.w3.org/2000/svg" class="size-4" viewBox="0 0 28 28">
+                                <path fill="currentColor"
+                                    d="M15.705 4.289a1 1 0 1 0-1.406 1.422L21.675 13H4a1 1 0 1 0 0 2h17.673l-7.374 7.286a1 1 0 0 0 1.406 1.423l8.927-8.821a1.25 1.25 0 0 0 0-1.778z"
+                                    stroke-width="1.2" stroke="currentColor" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="intro-section" class="lg:h-[calc(100vh-84px)] bg-[#F1E7D5]">
+        <div
+            class="text-[#222222] px-4 sm:px-6 lg:px-8 py-10 md:py-16 flex flex-col lg:flex-row text-center items-center justify-between gap-5 max-w-7xl m-auto h-full">
+
+            <!-- Text Content -->
+            <div class="space-y-3 text-center lg:text-left flex-1 w-full" data-aos="fade-right" data-aos-anchor="#intro-section">
+                <p class="text-lg text-[#555555] font-normal tracking-wide">Your Trusted Legal Advocate</p>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold leading-[115%] text-[#222222] font-serif">
+                    I'm Prabhat Kumar
+                    Singh - <span id="typed-text" class="text-[#8B1F25] font-serif"></span>
+                </h1>
+
+                <div class="flex items-center justify-center lg:justify-start space-x-4">
+                    <div>
+                        <p class="text-sm mt-5 text-[#222222]">Mentored by Leading Advocates</p>
+                        <div class="flex items-center text-[#555555] text-sm">
+                            <span class="mr-1">★</span> Experienced in Courts & Litigation
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12">
+                    <a href="#contact"
+                        class="inline-block bg-[#8B1F25] hover:bg-[#B73239] text-white font-medium text-base py-2.5 px-6 rounded-full shadow-md transition hover:scale-105 duration-200">
+                        Contact Me →
+                    </a>
+                </div>
+            </div>
+
+            <!-- Image Content -->
+            <div class="relative mt-12 lg:mt-0 ml-5 lg:ml-12 lg:w-max w-5/6 sm:w-1/2" data-aos="fade-left" data-aos-anchor="#intro-section">
+                <div class="shadow-lg rounded-tr-[23%] rounded-bl-[23%] mt-5 mr-5 relative z-10 w-full">
+                    <img src="imp-img/prabhat.png" alt="Prabhat Kumar Singh"
+                        class="object-cover w-full h-full rounded-tr-[23%] rounded-bl-[23%] ring-2 ring-[#555555] ring-offset-4 ring-offset-white max-h-120 aspect-[5/6]" />
+                    <div
+                        class="absolute w-full h-full border-3 border-[#8B1F25] -mt-5 ml-5 top-0 left-0 -z-10 rounded-tr-[23%] rounded-bl-[23%]">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about-me" class="bg-white">
+        <div class="max-w-7xl px-4 sm:px-6 lg:px-8 py-10 md:py-16 mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-16 items-center" >
+                <div class="grid grid-cols-[1.2fr_1fr] grid-rows-2 gap-4 h-full max-h-[550px]" data-aos="fade-right" data-aos-anchor="#about-me">
+                    <div class="row-span-2 relative z-10 h-full">
+                        <img src="imp-img/indian-court.jpg" alt="main-img"
+                            class="rounded-tl-[20%] rounded-br-[20%] rounded-bl-[20%] h-full w-[calc(100%-16px)] ml-4 brightness-125" />
+                        <div
+                            class="absolute top-0 left-0 -translate-y-4 rounded-tl-[20%] rounded-br-[20%] rounded-bl-[20%] -z-10 ring-3 ring-[#8B1F25] w-[calc(100%-16px)] h-[95%]">
+                        </div>
+                    </div>
+                    <img src="imp-img/delhi-university.webp" alt=""
+                        class="h-full w-full rounded-tl-[30%] rounded-tr-[30%] rounded-br-[30%]" />
+                    <img src="imp-img/jharkhand-court.jpg" alt=""
+                        class="h-full w-full rounded-tr-[30%] rounded-br-[30%] rounded-bl-[30%]" />
+                </div>
+
+                <div class="space-y-6 py-12" data-aos="fade-left" data-aos-anchor="#about-me">
+                    <p class="text-lg text-[#8B1F25] font-normal tracking-wide">About Me</p>
+                    <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-[#222222] font-serif">About Me & My
+                        Legal Journey
+                    </h2>
+                    <p class="text-[#555555] leading-relaxed font-light md:text-lg">
+                        I’m Prabhat Kumar Singh, a graduate of the Faculty of Law, Delhi University. As a passionate and
+                        determined first-generation lawyer, I’ve worked under experienced litigators in Delhi, gaining
+                        hands-on exposure in civil, criminal, and cyber law. I am now focused on building my independent
+                        practice and assisting clients with reliable, ethical legal support.
+                    </p>
+                    <ul class="space-y-3 text-[#222222] font-light text-lg">
+                        <li class="flex items-start gap-2">
+                            <span class="text-[#8B1F25] mt-1">✔️</span> Experience in Delhi's District & High Courts
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-[#8B1F25] mt-1">✔️</span> Expert in drafting Plaint, Written Statements,
+                            Bail & SLPs
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-[#8B1F25] mt-1">✔️</span> Specialized in Cybercrime, IPR, MSME & Family
+                            Law
+                            matters
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-[#8B1F25] mt-1">✔️</span> Committed to client-focused legal solutions
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" 
+                class="mt-12 bg-[#8B1F25] text-white rounded-3xl py-0 md:py-7 px-8 flex flex-col md:flex-row justify-between items-center gap-6 divide-[#cf5056] divide-y-1 md:divide-y-0 md:divide-x-1">
+
+                <div class="w-full flex items-center justify-center gap-3 py-7 md:py-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-14" viewBox="0 0 24 24">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="1"
+                            d="m19 5l-7-3l-7 3l3.5 1.5v2S9.667 8 12 8s3.5.5 3.5.5v-2zm0 0v4m-3.5-.5v1a3.5 3.5 0 1 1-7 0v-1m-.717 8.203c-1.1.685-3.986 2.082-2.229 3.831C6.413 21.39 7.37 22 8.571 22h6.858c1.202 0 2.158-.611 3.017-1.466c1.757-1.749-1.128-3.146-2.229-3.83a7.99 7.99 0 0 0-8.434 0"
+                            color="currentColor" />
+                    </svg>
+                    <div>
+                        <div class="text-3xl font-bold text-center">3+</div>
+                        <div class="text-sm mt-1">Internships Completed</div>
+                    </div>
+                </div>
+
+                <div class="w-full flex items-center justify-center gap-3 py-7 md:py-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-12" viewBox="0 0 24 24">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="1.2"
+                            d="M20.002 11v-1c0-3.771 0-5.657-1.24-6.828C17.52 2 15.524 2 11.532 2h-1.06c-3.993 0-5.99 0-7.23 1.172S2.002 6.229 2.002 10v4c0 3.771 0 5.657 1.24 6.828S6.48 22 10.472 22h.53m-4-15h8m-8 5h8m5.86 2.44l.695.692a1.497 1.497 0 0 1 0 2.121l-3.638 3.696a2 2 0 0 1-1.05.551l-2.254.488a.5.5 0 0 1-.597-.593l.48-2.235c.074-.397.267-.762.554-1.047l3.683-3.674a1.507 1.507 0 0 1 2.127 0"
+                            color="currentColor" />
+                    </svg>
+                    <div>
+                        <div class="text-3xl font-bold text-center">15+</div>
+                        <div class="text-sm mt-1">Legal Drafts Prepared</div>
+                    </div>
+                </div>
+
+                <div class="w-full flex items-center justify-center gap-3 py-7 md:py-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-12" viewBox="0 0 24 24">
+                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="1.2" color="currentColor">
+                            <path
+                                d="M2.351 13.214c-.353-2.298-.53-3.446-.095-4.465c.434-1.018 1.398-1.715 3.325-3.108L7.021 4.6C9.418 2.867 10.617 2 12 2s2.582.867 4.979 2.6l1.44 1.041c1.927 1.393 2.89 2.09 3.325 3.108c.434 1.019.258 2.167-.095 4.464l-.301 1.96c-.5 3.256-.751 4.884-1.919 5.856s-2.875.971-6.29.971H10.86c-3.415 0-5.122 0-6.29-.971c-1.168-.972-1.418-2.6-1.919-5.857z" />
+                            <path
+                                d="M11.25 13.25c1.187 1.187 2.75 2.393 2.75 2.393l2.143-2.143s-1.206-1.563-2.393-2.75S11 8.357 11 8.357L8.857 10.5s1.206 1.563 2.393 2.75m0 0L7.5 17m9-3.857L13.643 16m-2.286-8L8.5 10.857" />
+                        </g>
+                    </svg>
+                    <div>
+                        <div class="text-3xl font-bold text-center">10+</div>
+                        <div class="text-sm mt-1">Court Visits</div>
+                    </div>
+                </div>
+
+                <div class="w-full flex items-center justify-center gap-3 py-7 md:py-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-14" viewBox="0 0 24 24">
+                        <g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" stroke-width="0.1"
+                            stroke="currentColor">
+                            <path
+                                d="M9.493 15.917a.5.5 0 0 1-.41.576a17.4 17.4 0 0 0-6.805 2.705a.5.5 0 1 1-.556-.831a18.4 18.4 0 0 1 7.195-2.86a.5.5 0 0 1 .576.41m5.014 0a.5.5 0 0 1 .576-.41a18.4 18.4 0 0 1 7.195 2.86a.5.5 0 1 1-.556.83a17.4 17.4 0 0 0-6.805-2.704a.5.5 0 0 1-.41-.576" />
+                            <path
+                                d="M6.5 10a5.5 5.5 0 1 1 11 0c0 2.661-1.326 5.019-2.604 6.68a18.3 18.3 0 0 1-2.353 2.515l-.212.18l-.013.011l-.004.003h-.001L12 19l-.287.41l-.002-.002l-.004-.003l-.013-.009l-.047-.034l-.169-.129a13 13 0 0 1-.59-.491a15 15 0 0 1-1.778-1.867C7.82 15.263 6.5 12.905 6.5 10m5.5 9l-.287.41a.5.5 0 0 0 .6-.02zm-.018-.643a17.3 17.3 0 0 0 2.122-2.287C15.326 14.481 16.5 12.34 16.5 10a4.5 4.5 0 1 0-9 0c0 2.595 1.18 4.737 2.39 6.25a14 14 0 0 0 2.092 2.107M12 8.5a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3M9.5 10a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0" />
+                        </g>
+                    </svg>
+                    <div>
+                        <div class="text-3xl font-bold text-center">5+</div>
+                        <div class="text-sm mt-1">Legal Areas Practiced</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="legal-exp" class="bg-[#F1E7D5]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
+            <div class="grid lg:grid-cols-[2fr_1fr] gap-12 items-center">
+                <div class="space-y-6" data-aos="fade-right" data-aos-anchor="#legal-exp">
+                    <div>
+                        <p class="text-[#8B1F25] font-semibold text-sm uppercase tracking-wide mb-2">Legal Expertise</p>
+                        <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-[#1f1f1f] font-serif">
+                            Cybersecurity & Cyber Crime Defense
+                        </h2>
+                        <p class="text-[#555555] md:text-lg font-light leading-relaxed mt-2">
+                            Specialized legal representation in the complex world of cybersecurity law and digital crime
+                            defense.
+                            Protecting individuals and businesses from cyber threats while ensuring compliance with
+                            evolving regulations.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <div
+                                class="w-6 h-6 bg-[#8B1F25] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-sm text-gray-900">Data Breach Response</h3>
+                                <p class="text-[#333333] font-light md:text-lg">Immediate legal response to data
+                                    breaches, regulatory compliance, and damage mitigation strategies.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div
+                                class="w-6 h-6 bg-[#8B1F25] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-sm text-gray-900">Cybercrime Defense</h3>
+                                <p class="text-[#333333] font-light md:text-lg">Defending clients against hacking,
+                                    identity theft, online fraud, and digital harassment charges.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div
+                                class="w-6 h-6 bg-[#8B1F25] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-sm text-gray-900">Privacy Law Compliance</h3>
+                                <p class="text-[#333333] font-light md:text-lg">GDPR, CCPA, and other privacy
+                                    regulations
+                                    compliance for businesses and organizations.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div
+                                class="w-6 h-6 bg-[#8B1F25] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-sm text-gray-900">Digital Forensics Support</h3>
+                                <p class="text-[#333333] font-light md:text-lg">Legal guidance for digital evidence
+                                    collection, preservation, and presentation in court proceedings.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-full w-full" data-aos="fade-left" data-aos-anchor="#legal-exp">
+                    <div class="h-full rounded-2xl p-8 w-full">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 text-center h-full w-full">
+                            <!-- CARD -->
+                            <div
+                                class="space-y-3 bg-[#fef8ed] px-5 py-4 w-full h-full flex items-center justify-center flex-col shadow-lg shadow-gray-300/50 ring-1 ring-inset ring-gray-300/70 rounded-xl">
+                                <div class="size-14 bg-[#8B1F25] rounded-full flex items-center justify-center mx-auto">
+                                    <svg class="size-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <h4 class="font-semibold text-gray-900">Security</h4>
+                                <p class="text-sm text-gray-600">Protection & Defense</p>
+                            </div>
+
+                            <!-- CARD -->
+                            <div
+                                class="space-y-3 bg-[#fef8ed] px-5 py-4 w-full h-full flex items-center justify-center flex-col shadow-lg shadow-gray-300/50 ring-1 ring-inset ring-gray-300/70 rounded-xl">
+                                <div class="size-14 bg-[#8B1F25] rounded-full flex items-center justify-center mx-auto">
+                                    <svg class="size-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <h4 class="font-semibold text-gray-900">Compliance</h4>
+                                <p class="text-sm text-gray-600">Legal Standards</p>
+                            </div>
+
+                            <!-- CARD -->
+                            <div
+                                class="space-y-3 bg-[#fef8ed] px-5 py-4 w-full h-full flex items-center justify-center flex-col shadow-lg shadow-gray-300/50 ring-1 ring-inset ring-gray-300/70 rounded-xl">
+                                <div class="size-14 bg-[#8B1F25] rounded-full flex items-center justify-center mx-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="size-7 text-white"
+                                        viewBox="0 0 48 48">
+                                        <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4">
+                                            <path
+                                                d="M21 38c9.389 0 17-7.611 17-17S30.389 4 21 4S4 11.611 4 21s7.611 17 17 17Z" />
+                                            <path stroke-linecap="round"
+                                                d="M26.657 14.343A7.98 7.98 0 0 0 21 12a7.98 7.98 0 0 0-5.657 2.343m17.879 18.879l8.485 8.485" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <h4 class="font-semibold text-gray-900">Investigation</h4>
+                                <p class="text-sm text-gray-600">Digital Forensics</p>
+                            </div>
+
+                            <!-- CARD -->
+                            <div
+                                class="space-y-3 bg-[#fef8ed] px-5 py-4 w-full h-full flex items-center justify-center flex-col shadow-lg shadow-gray-300/50 ring-1 ring-inset ring-gray-300/70 rounded-xl">
+                                <div class="size-14 bg-[#8B1F25] rounded-full flex items-center justify-center mx-auto">
+                                    <svg class="size-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 11-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15 13.586V12a1 1 0 011-1z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <h4 class="font-semibold text-gray-900">Response</h4>
+                                <p class="text-sm text-gray-600">Crisis Management</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
+            <div class="text-center mb-12">
+                <p class="text-[#8B1F25] font-semibold text-sm uppercase tracking-wide mb-2">Client Reviews</p>
+                <h2 class="text-3xl md:text-4xl lg:text-6xl font-serif font-bold text-[#222222]">Voices from the Clients
+                </h2>
+                <p class="text-[#555555] text-lg max-w-3xl mx-auto mt-2 font-light">
+                    From defending against cybercrime allegations to ensuring privacy law compliance, hear how clients
+                    have benefited from expert legal support.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg shadow-gray-300 ring-1 ring-inset ring-gray-200 hover:shadow-xl transition duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="flex text-yellow-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921..." />
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921..." />
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921..." />
+                            </svg>
+                        </div>
+                    </div>
+                    <blockquote class="text-[#222222] text-lg mb-6 leading-relaxed">
+                        “Mr. Singh guided us through a cyber fraud case with professionalism and clarity. His expertise
+                        in digital crime law was critical to our successful defense.”
+                    </blockquote>
+                    <div class="flex items-center">
+                        <img class="w-12 h-12 rounded-full object-cover mr-4"
+                            src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+                        <div>
+                            <h4 class="font-semibold text-[#222222]">Rajesh Malhotra</h4>
+                            <p class="text-[#555555] text-sm font-light">Small Business Owner, Delhi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg shadow-gray-300 ring-1 ring-inset ring-gray-200 hover:shadow-xl transition duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="flex text-yellow-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921..." />
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921..." />
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921..." />
+                            </svg>
+                        </div>
+                    </div>
+                    <blockquote class="text-[#222222] text-lg mb-6 leading-relaxed">
+                        “We needed urgent advice on a potential data breach. Prabhat’s calm and swift legal response
+                        helped us comply with regulations and avoid reputational damage.”
+                    </blockquote>
+                    <div class="flex items-center">
+                        <img class="w-12 h-12 rounded-full object-cover mr-4"
+                            src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client">
+                        <div>
+                            <h4 class="font-semibold text-[#222222]">Nikita Suresh</h4>
+                            <p class="text-[#555555] text-sm font-light">CTO, FinEdge Technologies</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg shadow-gray-300 ring-1 ring-inset ring-gray-200 hover:shadow-xl transition duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="flex text-yellow-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921..." />
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921..." />
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921..." />
+                            </svg>
+                        </div>
+                    </div>
+                    <blockquote class="text-[#222222] text-lg mb-6 leading-relaxed">
+                        “Highly recommend Prabhat for any privacy law or cyber litigation issues. His advice was
+                        practical, timely, and aligned perfectly with our business needs.”
+                    </blockquote>
+                    <div class="flex items-center">
+                        <img class="w-12 h-12 rounded-full object-cover mr-4"
+                            src="https://randomuser.me/api/portraits/men/64.jpg" alt="Client">
+                        <div>
+                            <h4 class="font-semibold text-[#222222]">Amit Kapoor</h4>
+                            <p class="text-[#555555] text-sm font-light">Legal Head, SecureNova Inc.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="form" class="bg-[#F1E7D5]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
+            <div class="grid lg:grid-cols-[1.5fr_1fr] gap-12 items-center">
+                <!-- Contact Form -->
+                <div data-aos="fade-right" data-aos-anchor="#form"
+                    class="bg-white shadow-lg shadow-gray-300 rounded-2xl p-8 text-[#222222] ring-1 ring-inset ring-gray-300/80">
+                    <div class="text-center mb-8">
+                        <p class="text-[#8B1F25] text-sm mb-2 font-semibold">Need Legal Help?</p>
+                        <h2 class="text-3xl font-bold font-serif text-[#8B1F25]">Request a Consultation</h2>
+                    </div>
+
+                    <form class="space-y-6">
+                        <div class="relative">
+                            <input type="text" placeholder="Your Full Name"
+                                class="w-full px-4 py-3 rounded-full bg-[#fef8ed] text-[#222222] placeholder-[#555555] focus:outline-none focus:ring-2 focus:ring-[#8B1F25] ring-1 ring-gray-400/70">
+                            <div class="absolute right-4 top-1/2 transform -translate-y-1/2">
+                                <svg class="w-5 h-5 text-[#555555]/75" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="relative">
+                                <input type="email" placeholder="Email Address"
+                                    class="w-full px-4 py-3 rounded-full bg-[#fef8ed] text-[#222222] placeholder-[#555555] focus:outline-none focus:ring-2 focus:ring-[#8B1F25] ring-1 ring-gray-400/70">
+                                <div class="absolute right-4 top-1/2 transform -translate-y-1/2">
+                                    <svg class="w-5 h-5 text-[#555555]/75" fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="relative">
+                                <input type="tel" placeholder="Phone Number"
+                                    class="w-full px-4 py-3 rounded-full bg-[#fef8ed] text-[#222222] placeholder-[#555555] focus:outline-none focus:ring-2 focus:ring-[#8B1F25] ring-1 ring-gray-400/70">
+                                <div class="absolute right-4 top-1/2 transform -translate-y-1/2">
+                                    <svg class="w-5 h-5 text-[#555555]/75" fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative">
+                            <textarea placeholder="Describe your legal concern..." rows="4"
+                                class="w-full px-4 py-3 rounded-2xl bg-[#fef8ed] text-[#222222] placeholder-[#555555] focus:outline-none focus:ring-2 focus:ring-[#8B1F25] resize-none ring-1 ring-gray-400/70"></textarea>
+                            <div class="absolute right-4 top-4">
+                                <svg class="w-5 h-5 text-[#555555]/75" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full bg-[#8B1F25] hover:bg-[#B73239] text-white font-semibold py-3 px-6 rounded-full transition duration-300 flex items-center justify-center gap-2">
+                            Send Message
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <div data-aos="fade-left" data-aos-anchor="#form" class="h-full grid lg:grid-rows-3 gap-8 py-2">
+                    <!-- Location -->
+                    <div
+                        class="flex items-start gap-4 bg-white py-5 px-6 h-full rounded-xl shadow-lg shadow-gray-200 ring-1 ring-gray-200/80">
+                        <div
+                            class="w-12 h-12 bg-[#fef8ed] ring-1 ring-inset ring-[#8B1F25]/10 rounded-full flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-[#8B1F25]" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-[#222222] font-semibold text-base mb-1">Office Location</h3>
+                            <p class="text-[#555555]">Ranchi, Jharkhand</p>
+                        </div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div
+                        class="flex items-start gap-4 bg-white py-5 px-6 h-full rounded-xl shadow-lg shadow-gray-200 ring-1 ring-gray-200/80">
+                        <div
+                            class="w-12 h-12 bg-[#fef8ed] ring-1 ring-inset ring-[#8B1F25]/10 rounded-full flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-[#8B1F25]" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-[#222222] font-semibold text-base mb-1">Phone Numbers</h3>
+                            <p class="text-[#555555]">+91 7903875613</p>
+                            <p class="text-[#555555]">+91 9546047667</p>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div
+                        class="flex items-start gap-4 bg-white py-5 px-6 h-full rounded-xl shadow-lg shadow-gray-200 ring-1 ring-gray-200/80">
+                        <div
+                            class="w-12 h-12 bg-[#fef8ed] ring-1 ring-inset ring-[#8B1F25]/10 rounded-full flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-[#8B1F25]" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-[#222222] font-semibold text-base mb-1">Email Address</h3>
+                            <p class="text-[#555555]">Prabhatshekhar112@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t border-gray-200">
+        <div class="mx-auto max-w-7xl px-6 py-10 md:flex md:items-center md:justify-between lg:px-8">
+
+            <div class="flex justify-center md:justify-end gap-x-6 mb-6 md:mb-0 md:order-2">
+                <a href="#" class="text-gray-600 hover:text-blue-600" aria-label="Facebook">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-blue-600" aria-label="Instagram">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.9 4.9 0 011.772 1.153 4.9 4.9 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.9 4.9 0 01-1.153 1.772 4.9 4.9 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.9 4.9 0 01-1.772-1.153 4.9 4.9 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427C2.013 14.784 2 14.43 2 12v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427A4.9 4.9 0 014.378 3.53a4.9 4.9 0 011.772-1.153c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-blue-600" aria-label="LinkedIn">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                            d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5V5c0-2.761-2.239-5-5-5zM7.059 20H4V9h3.059v11zM5.529 7.609c-.97 0-1.559-.649-1.559-1.462 0-.829.609-1.463 1.609-1.463.999 0 1.559.634 1.579 1.463 0 .813-.58 1.462-1.629 1.462zM20 20h-3v-5.719c0-1.37-.491-2.309-1.721-2.309-.939 0-1.498.634-1.749 1.245-.09.215-.11.52-.11.825V20h-3s.039-10.933 0-11h3v1.563c.4-.623 1.11-1.511 2.709-1.511 1.979 0 3.471 1.292 3.471 4.071V20z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Copyright -->
+            <p class="text-center text-sm text-gray-600 md:text-left md:order-1">
+                &copy; 2024 Prabhat Kumar Singh, Advocate. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+
+</body>
+
+<script>
+
+  AOS.init();
+
+    const phrases = [
+        "A Passionate Litigator",
+        "Cybercrime Defense Expert",
+        "Civil & Criminal Advocate",
+        "Defender of Digital Rights"
+    ];
+
+    const typedText = document.getElementById("typed-text");
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function type() {
+        const currentPhrase = phrases[phraseIndex];
+        const currentText = currentPhrase.substring(0, charIndex);
+        typedText.textContent = currentText;
+
+        if (!isDeleting && charIndex < currentPhrase.length) {
+            charIndex++;
+            setTimeout(type, 100); // typing speed
+        } else if (isDeleting && charIndex > 0) {
+            charIndex--;
+            setTimeout(type, 50); // deleting speed
+        } else {
+            isDeleting = !isDeleting;
+
+            if (!isDeleting) {
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+            }
+
+            setTimeout(type, 1200); // pause before typing next
+        }
+    }
+
+    // Start typing
+    document.addEventListener("DOMContentLoaded", type);
+</script>
+
+
+</html>
