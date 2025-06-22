@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <style>
+        .hero-gradient {
+            background: white;
+        }
+
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-white shadow-lg shadow-gray-300/50 relative z-50">
+        <nav>
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="flex h-21 items-center justify-between">
+                    <div class="flex items-center w-full justify-center sm:justify-between">
+                        <div class="shrink-0">
+                            <a href="##" class="text-[#8B1F25] font-semibold text-xl">Logo</a>
+                        </div>
+                        <div class="hidden sm:ml-6 sm:block flex-1">
+                            <div class="flex space-x-8 justify-center">
+                                <a href="#"
+                                    class="rounded-md py-2 text-lg font-light text-[#222222] hover:text-[#8B1F25] transition relative after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#8B1F25] after:transition-all after:duration-300 hover:after:w-full hover:after:left-0">
+                                    About
+                                </a>
+                                <a href="#"
+                                    class="rounded-md py-2 text-lg font-light text-[#222222] hover:text-[#8B1F25] transition relative after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#8B1F25] after:transition-all after:duration-300 hover:after:w-full hover:after:left-0">
+                                    Expertise
+                                </a>
+                                <a href="#"
+                                    class="rounded-md py-2 text-lg font-light text-[#222222] hover:text-[#8B1F25] transition relative after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#8B1F25] after:transition-all after:duration-300 hover:after:w-full hover:after:left-0">
+                                    Clients' Review
+                                </a>
+                            </div>
+                        </div>
+                        <a href="##"
+                            class="sm:inline-flex items-center gap-x-2 rounded-full bg-[#8B1F25] px-5 py-3 text-base font-normal text-white shadow-sm hover:bg-[#B73239] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8B1F25] cursor-pointer hover:scale-105 transition-all duration-200 hidden">
+                            Free Consultant
+                            <svg xmlns="http://www.w3.org/2000/svg" class="size-4" viewBox="0 0 28 28">
+                                <path fill="currentColor"
+                                    d="M15.705 4.289a1 1 0 1 0-1.406 1.422L21.675 13H4a1 1 0 1 0 0 2h17.673l-7.374 7.286a1 1 0 0 0 1.406 1.423l8.927-8.821a1.25 1.25 0 0 0 0-1.778z"
+                                    stroke-width="1.2" stroke="currentColor" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-gradient relative overflow-hidden min-h-screen flex items-center">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0">
+            <div class="absolute top-10 left-10 w-20 h-20 bg-white/10 rounded-full animate-float"></div>
+            <div class="absolute top-40 right-20 w-16 h-16 bg-white/10 rounded-full animate-float"
+                style="animation-delay: -2s;"></div>
+            <div class="absolute bottom-20 left-20 w-24 h-24 bg-white/10 rounded-full animate-float"
+                style="animation-delay: -4s;"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Text Content -->
+                <div class="text-gray-900">
+                    <div class="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
+                        <span class="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
+                        <span class="text-sm font-medium">Available for Consultation</span>
+                    </div>
+
+                    <h1 class="text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                        Bank Account
+                        <span class="text-[#8B1F25]">Unfreeze</span>
+                        Legal Expert
+                    </h1>
+
+                    <p class="text-xl text-gray-500 mb-8 leading-relaxed max-w-xl font-light">
+                        Advocate Prabhat Kumar Singh is a dedicated legal professional practicing at the Jharkhand High
+                        Court. with extensive expertise in defreezing bank accounts frozen due to enforcement actions,
+                        regulatory proceedings, or cybercrime investigations. Known for a sharp understanding of
+                        financial regulations, digital evidence, and procedural law, Adv. Singh has successfully
+                        represented individuals, professionals, and businesses facing unjust or arbitrary account
+                        restrictions.
+
+                    </p>
+
+                    <p class="text-lg text-gray-600 mb-10 leading-relaxed max-w-2xl font-light">
+                        Known for a sharp understanding of financial regulations, digital evidence, and procedural law,
+                        Adv. Singh has successfully represented individuals, professionals, and businesses facing unjust
+                        or arbitrary account restrictions. With a background in cyber law and digital forensics, he has
+                        built a reputation for navigating complex cases involving phishing, fraud, data breaches, money
+                        laundering allegations, and unauthorized transactions.
+                    </p>
+
+                </div>
+
+                <!-- Image -->
+                <div class="relative">
+                    <div class="relative z-10 bg-white rounded-3xl p-8 shadow-2xl card-hover">
+                        <img src="imp-img/prabhat.png" alt="Advocate Prabhat Kumar Singh"
+                            class="w-full h-96 object-cover rounded-2xl" />
+                        <div class="mt-6 text-center">
+                            <h3 class="text-2xl font-bold text-gray-900">Adv. Prabhat Kumar Singh</h3>
+                            <p class="text-[#8B1F25] font-medium">Jharkhand High Court</p>
+                            <p class="text-gray-600 mt-2">Cyber Law & Banking Expert</p>
+                        </div>
+                    </div>
+
+                    <!-- Floating Stats -->
+                    <div class="absolute -top-6 -left-6 bg-white rounded-2xl p-4 shadow-lg animate-float">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-[#8B1F25]">500+</div>
+                            <div class="text-sm text-gray-600">Cases Won</div>
+                        </div>
+                    </div>
+
+                    <div class="absolute -bottom-6 -right-6 bg-white rounded-2xl p-4 shadow-lg animate-float"
+                        style="animation-delay: -3s;">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-green-600">98%</div>
+                            <div class="text-sm text-gray-600">Success Rate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-20 px-4 sm:px-6 lg:px-8 relative">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <svg class="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                    <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#3b82f6" stroke-width="0.5" />
+                </pattern>
+                <rect width="100" height="100" fill="url(#grid)" />
+            </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-[1.2fr_1fr] gap-16 items-center relative">
+            <!-- Left Content -->
+            <div class="text-left">
+                <div class="inline-flex items-center bg-[#f8efe3] text-[#8B1F25] px-4 py-2 rounded-full mb-6">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    Urgent Legal Help Required?
+                </div>
+
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                    Account Frozen Due to
+                    <span class="text-[#8B1F25]">Cyber Fraud?</span>
+                </h2>
+
+                <p class="text-xl text-gray-700 leading-relaxed mb-6 font-light">
+                    If your bank account has been frozen due to cybercrime allegations, unauthorized transactions, or
+                    regulatory enforcement actions, immediate legal intervention is crucial. Our expert legal team
+                    specializes in swift account unfreeze procedures.
+                </p>
+
+            </div>
+
+
+            <div class="relative">
+                <div
+                    class="absolute inset-0 bg-gradient-to-br from-[#8B1F25] to-[#a52a2f] rounded-3xl transform rotate-1">
+                </div>
+                <div class="relative bg-white rounded-3xl shadow-2xl p-8 lg:p-10">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Emergency Consultation</h3>
+                        <p class="text-gray-600">Get immediate legal assistance for your frozen account</p>
+                    </div>
+
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Full Name *</label>
+                                <input type="text" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#a52a2f] focus:outline-none focus:border-transparent transition duration-200"
+                                    placeholder="Your full name">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Phone Number *</label>
+                                <input type="tel" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#a52a2f] focus:outline-none focus:border-transparent transition duration-200"
+                                    placeholder="+91 XXXXX XXXXX">
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Email Address</label>
+                                <input type="email"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#a52a2f] focus:outline-none focus:border-transparent transition duration-200"
+                                    placeholder="your@email.com">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Frozen Amount</label>
+                                <input type="text"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#a52a2f] focus:outline-none focus:border-transparent transition duration-200"
+                                    placeholder="₹ Amount frozen">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Account Number</label>
+                            <input type="text"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#a52a2f] focus:outline-none focus:border-transparent transition duration-200"
+                                placeholder="Account Number">
+                        </div>
+
+
+                        <button type="submit"
+                            class="w-full bg-[#8B1F25] hover:bg-[#a52a2f] text-white font-semibold py-4 rounded-xl transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+                            Get Immediate Legal Help
+                        </button>
+
+                        <p class="text-center text-sm text-gray-500">
+                            Free consultation • No upfront fees • 100% confidential
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#fff8ee]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
+            <div class="text-center mb-12">
+                <p class="text-[#8B1F25] font-semibold text-sm uppercase tracking-wide mb-2">Feedback</p>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-[#222222]"> Clients Feedback
+                </h2>
+                <p class="text-[#555555] text-lg max-w-3xl mx-auto mt-2 font-light">
+                    From defending against cybercrime allegations to ensuring privacy law compliance, hear how clients
+                    have benefited from expert legal support.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg shadow-[#d1c5af] ring-1 ring-inset ring-[#e1d7c5] hover:shadow-xl transition duration-300">
+                    <blockquote class="text-[#222222] text-base mb-6 leading-relaxed">
+                        “Mr. Singh guided us through a cyber fraud case with professionalism and clarity. His expertise
+                        in digital crime law was critical to our successful defense.”
+                    </blockquote>
+                    <div class="flex items-center">
+                        <img class="w-12 h-12 rounded-full object-cover mr-4"
+                            src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+                        <div>
+                            <h4 class="font-semibold text-[#222222]">Rajesh Malhotra</h4>
+                            <p class="text-[#555555] text-sm font-light">Small Business Owner, Delhi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg shadow-[#d1c5af] ring-1 ring-inset ring-[#e1d7c5] hover:shadow-xl transition duration-300">
+                    <blockquote class="text-[#222222] text-base mb-6 leading-relaxed">
+                        “We needed urgent advice on a potential data breach. Prabhat’s calm and swift legal response
+                        helped us comply with regulations and avoid reputational damage.”
+                    </blockquote>
+                    <div class="flex items-center">
+                        <img class="w-12 h-12 rounded-full object-cover mr-4"
+                            src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client">
+                        <div>
+                            <h4 class="font-semibold text-[#222222]">Nikita Suresh</h4>
+                            <p class="text-[#555555] text-sm font-light">CTO, FinEdge Technologies</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg shadow-[#d1c5af] ring-1 ring-inset ring-[#e1d7c5] hover:shadow-xl transition duration-300">
+                    <blockquote class="text-[#222222] text-base mb-6 leading-relaxed">
+                        “Highly recommend Prabhat for any privacy law or cyber litigation issues. His advice was
+                        practical, timely, and aligned perfectly with our business needs.”
+                    </blockquote>
+                    <div class="flex items-center">
+                        <img class="w-12 h-12 rounded-full object-cover mr-4"
+                            src="https://randomuser.me/api/portraits/men/64.jpg" alt="Client">
+                        <div>
+                            <h4 class="font-semibold text-[#222222]">Amit Kapoor</h4>
+                            <p class="text-[#555555] text-sm font-light">Legal Head, SecureNova Inc.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-white border-t border-gray-200">
+        <div class="mx-auto max-w-7xl px-6 py-10 md:flex md:items-center md:justify-between lg:px-8">
+
+            <div class="flex justify-center md:justify-end gap-x-6 mb-6 md:mb-0 md:order-2">
+                <a href="#" class="text-gray-600 hover:text-[#8B1F25]" aria-label="Facebook">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-[#8B1F25]" aria-label="Instagram">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.9 4.9 0 011.772 1.153 4.9 4.9 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.9 4.9 0 01-1.153 1.772 4.9 4.9 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.9 4.9 0 01-1.772-1.153 4.9 4.9 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427C2.013 14.784 2 14.43 2 12v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427A4.9 4.9 0 014.378 3.53a4.9 4.9 0 011.772-1.153c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-[#8B1F25]" aria-label="LinkedIn">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                            d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5V5c0-2.761-2.239-5-5-5zM7.059 20H4V9h3.059v11zM5.529 7.609c-.97 0-1.559-.649-1.559-1.462 0-.829.609-1.463 1.609-1.463.999 0 1.559.634 1.579 1.463 0 .813-.58 1.462-1.629 1.462zM20 20h-3v-5.719c0-1.37-.491-2.309-1.721-2.309-.939 0-1.498.634-1.749 1.245-.09.215-.11.52-.11.825V20h-3s.039-10.933 0-11h3v1.563c.4-.623 1.11-1.511 2.709-1.511 1.979 0 3.471 1.292 3.471 4.071V20z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Copyright -->
+            <p class="text-center text-sm text-gray-600 md:text-left md:order-1">
+                &copy; 2024 Prabhat Kumar Singh, Advocate. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
