@@ -220,6 +220,9 @@
   .-top-6 {
     top: calc(var(--spacing) * -6);
   }
+  .-top-16 {
+    top: calc(var(--spacing) * -16);
+  }
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
@@ -237,6 +240,15 @@
   }
   .-bottom-6 {
     bottom: calc(var(--spacing) * -6);
+  }
+  .-bottom-16 {
+    bottom: calc(var(--spacing) * -16);
+  }
+  .-bottom-20 {
+    bottom: calc(var(--spacing) * -20);
+  }
+  .-bottom-24 {
+    bottom: calc(var(--spacing) * -24);
   }
   .-left-6 {
     left: calc(var(--spacing) * -6);
@@ -719,6 +731,18 @@
   }
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
+  }
+  .pb-10 {
+    padding-bottom: calc(var(--spacing) * 10);
+  }
+  .pb-12 {
+    padding-bottom: calc(var(--spacing) * 12);
+  }
+  .pb-20 {
+    padding-bottom: calc(var(--spacing) * 20);
+  }
+  .pb-32 {
+    padding-bottom: calc(var(--spacing) * 32);
   }
   .text-center {
     text-align: center;
@@ -1303,6 +1327,11 @@
       padding-block: calc(var(--spacing) * 16);
     }
   }
+  .md\:pb-0 {
+    @media (width >= 48rem) {
+      padding-bottom: calc(var(--spacing) * 0);
+    }
+  }
   .md\:text-left {
     @media (width >= 48rem) {
       text-align: left;
@@ -1400,6 +1429,11 @@
   .lg\:px-8 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 8);
+    }
+  }
+  .lg\:pb-0 {
+    @media (width >= 64rem) {
+      padding-bottom: calc(var(--spacing) * 0);
     }
   }
   .lg\:text-left {
